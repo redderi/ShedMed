@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1377</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MedShed</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QMainWindow {
+        background-color: #F5F6F5;
+        font: 10pt &quot;Segoe UI&quot;;
+        color: #333333;
+    }
+    QWidget {
+        background-color: #FFFFFF;
+        border-radius: 8px;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+    <property name="spacing">
+     <number>16</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>16</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>8</number>
+      </property>
+      <property name="leftMargin">
+       <number>8</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="main_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+            QToolButton {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F0F0F0, stop:1 #E0E0E0);
+                border: 1px solid #B0B0B0;
+                border-radius: 6px;
+                padding: 8px;
+                margin: 4px;
+                color: #333333;
+                font: bold 10pt &quot;Segoe UI&quot;;
+                text-align: center;
+            }
+            QToolButton:hover {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E0E0E0, stop:1 #D0D0D0);
+                border: 1px solid #909090;
+            }
+            QToolButton:pressed {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #D0D0D0, stop:1 #C0C0C0);
+                border: 1px solid #707070;
+            }
+            QToolButton:checked {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #A0C0FF, stop:1 #80A0FF);
+                border: 1px solid #6090FF;
+            }
+            QToolButton::icon {
+                padding-bottom: 4px;
+            }
+         </string>
+        </property>
+        <property name="text">
+         <string>Главная</string>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::GoHome"/>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="event_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+            QToolButton {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F0F0F0, stop:1 #E0E0E0);
+                border: 1px solid #B0B0B0;
+                border-radius: 6px;
+                padding: 8px;
+                margin: 4px;
+                color: #333333;
+                font: bold 10pt &quot;Segoe UI&quot;;
+                text-align: center;
+            }
+            QToolButton:hover {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E0E0E0, stop:1 #D0D0D0);
+                border: 1px solid #909090;
+            }
+            QToolButton:pressed {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #D0D0D0, stop:1 #C0C0C0);
+                border: 1px solid #707070;
+            }
+            QToolButton:checked {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #A0C0FF, stop:1 #80A0FF);
+                border: 1px solid #6090FF;
+            }
+            QToolButton::icon {
+                padding-bottom: 4px;
+            }
+         </string>
+        </property>
+        <property name="text">
+         <string>События</string>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::DocumentOpenRecent"/>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="backups_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+            QToolButton {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F0F0F0, stop:1 #E0E0E0);
+                border: 1px solid #B0B0B0;
+                border-radius: 6px;
+                padding: 8px;
+                margin: 4px;
+                color: #333333;
+                font: bold 10pt &quot;Segoe UI&quot;;
+                text-align: center;
+            }
+            QToolButton:hover {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E0E0E0, stop:1 #D0D0D0);
+                border: 1px solid #909090;
+            }
+            QToolButton:pressed {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #D0D0D0, stop:1 #C0C0C0);
+                border: 1px solid #707070;
+            }
+            QToolButton:checked {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #A0C0FF, stop:1 #80A0FF);
+                border: 1px solid #6090FF;
+            }
+            QToolButton::icon {
+                padding-bottom: 4px;
+            }
+         </string>
+        </property>
+        <property name="text">
+         <string>Резервные
+копии</string>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::EditCopy"/>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="export_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+            QToolButton {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F0F0F0, stop:1 #E0E0E0);
+                border: 1px solid #B0B0B0;
+                border-radius: 6px;
+                padding: 8px;
+                margin: 4px;
+                color: #333333;
+                font: bold 10pt &quot;Segoe UI&quot;;
+                text-align: center;
+            }
+            QToolButton:hover {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E0E0E0, stop:1 #D0D0D0);
+                border: 1px solid #909090;
+            }
+            QToolButton:pressed {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #D0D0D0, stop:1 #C0C0C0);
+                border: 1px solid #707070;
+            }
+            QToolButton:checked {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #A0C0FF, stop:1 #80A0FF);
+                border: 1px solid #6090FF;
+            }
+            QToolButton::icon {
+                padding-bottom: 4px;
+            }
+         </string>
+        </property>
+        <property name="text">
+         <string>Экспорт</string>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::DocumentSend"/>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="import_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+            QToolButton {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F0F0F0, stop:1 #E0E0E0);
+                border: 1px solid #B0B0B0;
+                border-radius: 6px;
+                padding: 8px;
+                margin: 4px;
+                color: #333333;
+                font: bold 10pt &quot;Segoe UI&quot;;
+                text-align: center;
+            }
+            QToolButton:hover {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E0E0E0, stop:1 #D0D0D0);
+                border: 1px solid #909090;
+            }
+            QToolButton:pressed {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #D0D0D0, stop:1 #C0C0C0);
+                border: 1px solid #707070;
+            }
+            QToolButton:checked {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #A0C0FF, stop:1 #80A0FF);
+                border: 1px solid #6090FF;
+            }
+            QToolButton::icon {
+                padding-bottom: 4px;
+            }
+         </string>
+        </property>
+        <property name="text">
+         <string>Импорт</string>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::MailSend"/>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::ToolButtonPopupMode::DelayedPopup</enum>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+        </property>
+        <property name="arrowType">
+         <enum>Qt::ArrowType::NoArrow</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="guide_button">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>110</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+            QToolButton {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F0F0F0, stop:1 #E0E0E0);
+                border: 1px solid #B0B0B0;
+                border-radius: 6px;
+                padding: 8px;
+                margin: 4px;
+                color: #333333;
+                font: bold 10pt &quot;Segoe UI&quot;;
+                text-align: center;
+            }
+            QToolButton:hover {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E0E0E0, stop:1 #D0D0D0);
+                border: 1px solid #909090;
+            }
+            QToolButton:pressed {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #D0D0D0, stop:1 #C0C0C0);
+                border: 1px solid #707070;
+            }
+            QToolButton:checked {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #A0C0FF, stop:1 #80A0FF);
+                border: 1px solid #6090FF;
+            }
+            QToolButton::icon {
+                padding-bottom: 4px;
+            }
+         </string>
+        </property>
+        <property name="text">
+         <string>Руководство</string>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::DocumentPageSetup"/>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+        QStackedWidget {
+            background-color: #FFFFFF;
+            border: 1px solid #D3D3D3;
+            border-radius: 8px;
+            padding-top: 8px;
+        }
+       </string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="main_page">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>12</number>
+        </property>
+        <property name="leftMargin">
+         <number>12</number>
+        </property>
+        <property name="topMargin">
+         <number>12</number>
+        </property>
+        <property name="rightMargin">
+         <number>12</number>
+        </property>
+        <property name="bottomMargin">
+         <number>12</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="buttonLayout">
+          <property name="spacing">
+           <number>8</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="create_button">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QPushButton {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4A90E2, stop:1 #357ABD);
+                    color: #FFFFFF;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 10px;
+                    font: bold 10pt &quot;Segoe UI&quot;;
+                }
+                QPushButton:hover {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #357ABD, stop:1 #2D5D9F);
+                }
+                QPushButton:pressed {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #2D5D9F, stop:1 #254C80);
+                }
+                QPushButton:disabled {
+                    background-color: #CCCCCC;
+                    color: #666666;
+                }
+             </string>
+            </property>
+            <property name="text">
+             <string>Создать</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="edit_button">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QPushButton {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4A90E2, stop:1 #357ABD);
+                    color: #FFFFFF;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 10px;
+                    font: bold 10pt &quot;Segoe UI&quot;;
+                }
+                QPushButton:hover {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #357ABD, stop:1 #2D5D9F);
+                }
+                QPushButton:pressed {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #2D5D9F, stop:1 #254C80);
+                }
+                QPushButton:disabled {
+                    background-color: #CCCCCC;
+                    color: #666666;
+                }
+             </string>
+            </property>
+            <property name="text">
+             <string>Изменить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="delete_button">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QPushButton {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E24A4A, stop:1 #BD3535);
+                    color: #FFFFFF;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 10px;
+                    font: bold 10pt &quot;Segoe UI&quot;;
+                }
+                QPushButton:hover {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #BD3535, stop:1 #9F2D2D);
+                }
+                QPushButton:pressed {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9F2D2D, stop:1 #802525);
+                }
+                QPushButton:disabled {
+                    background-color: #CCCCCC;
+                    color: #666666;
+                }
+             </string>
+            </property>
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="searchLabel">
+            <property name="styleSheet">
+             <string notr="true">
+                QLabel {
+                    color: #333333;
+                    font: 10pt &quot;Segoe UI&quot;;
+                    padding: 8px;
+                }
+             </string>
+            </property>
+            <property name="text">
+             <string>Поиск:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="searchLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QLineEdit {
+                    background-color: #FFFFFF;
+                    border: 1px solid #B0B0B0;
+                    border-radius: 6px;
+                    padding: 8px;
+                    color: #333333;
+                    font: 10pt &quot;Segoe UI&quot;;
+                }
+                QLineEdit:focus {
+                    border: 1px solid #4A90E2;
+                    background-color: #F9FAFB;
+                }
+                QLineEdit::placeholder {
+                    color: #999999;
+                }
+             </string>
+            </property>
+            <property name="placeholderText">
+             <string>Введите запрос для поиска...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="searchColumnComboBox">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QComboBox {
+                    background-color: #FFFFFF;
+                    border: 1px solid #B0B0B0;
+                    border-radius: 6px;
+                    padding: 8px;
+                    color: #333333;
+                    font: 10pt &quot;Segoe UI&quot;;
+                }
+                QComboBox:hover {
+                    border: 1px solid #909090;
+                }
+                QComboBox:focus {
+                    border: 1px solid #4A90E2;
+                }
+                QComboBox::drop-down {
+                    subcontrol-origin: padding;
+                    subcontrol-position: top right;
+                    width: 20px;
+                    border-left: 1px solid #B0B0B0;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+                QComboBox::down-arrow {
+                    image: url(:/icons/down-arrow.png);
+                }
+             </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="sortLabel">
+            <property name="styleSheet">
+             <string notr="true">
+                QLabel {
+                    color: #333333;
+                    font: 10pt &quot;Segoe UI&quot;;
+                    padding: 8px;
+                }
+             </string>
+            </property>
+            <property name="text">
+             <string>Сортировать:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="sortOrderComboBox">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QComboBox {
+                    background-color: #FFFFFF;
+                    border: 1px solid #B0B0B0;
+                    border-radius: 6px;
+                    padding: 8px;
+                    color: #333333;
+                    font: 10pt &quot;Segoe UI&quot;;
+                }
+                QComboBox:hover {
+                    border: 1px solid #909090;
+                }
+                QComboBox:focus {
+                    border: 1px solid #4A90E2;
+                }
+                QComboBox::drop-down {
+                    subcontrol-origin: padding;
+                    subcontrol-position: top right;
+                    width: 20px;
+                    border-left: 1px solid #B0B0B0;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+                QComboBox::down-arrow {
+                    image: url(:/icons/down-arrow.png);
+                }
+             </string>
+            </property>
+            <item>
+             <property name="text">
+              <string>По возрастанию</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>По убыванию</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="sortColumnComboBox">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QComboBox {
+                    background-color: #FFFFFF;
+                    border: 1px solid #B0B0B0;
+                    border-radius: 6px;
+                    padding: 8px;
+                    color: #333333;
+                    font: 10pt &quot;Segoe UI&quot;;
+                }
+                QComboBox:hover {
+                    border: 1px solid #909090;
+                }
+                QComboBox:focus {
+                    border: 1px solid #4A90E2;
+                }
+                QComboBox::drop-down {
+                    subcontrol-origin: padding;
+                    subcontrol-position: top right;
+                    width: 20px;
+                    border-left: 1px solid #B0B0B0;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+                QComboBox::down-arrow {
+                    image: url(:/icons/down-arrow.png);
+                }
+             </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="tableView">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"> QTableView {
+                background-color: #FFFFFF;
+                border: 1px solid #D3D3D3;
+                gridline-color: #E0E0E0;
+                font: 9pt &quot;Segoe UI&quot;;
+                color: #333333;
+                border-radius: 6px;
+                padding: 4px;
+            }
+            QTableView::item {
+                padding: 8px;
+                white-space: normal;
+                word-wrap: break-word;
+                text-align: center;
+            }
+            QTableView::item:nth-child(even) {
+                background-color: #F9FAFB;
+            }
+            QTableView::item:nth-child(odd) {
+                background-color: #FFFFFF;
+            }
+            QTableView::item:selected {
+                background-color: #4A90E2;
+                color: #FFFFFF;
+                border: 1px solid #357ABD;
+            }
+QHeaderView::section {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E8F5E9, stop:1 #D4EFDF);
+    color: #333333;
+    font: bold 10pt &quot;Segoe UI&quot;;
+    padding: 8px;
+    border: 1px solid #A0A0B0;
+    border-bottom: 2px solid #78909C;
+    text-align: center;
+    min-height: 40px;
+  }
+            QHeaderView::section:first {
+                border-left: 1px solid #D3D3D3;
+            }
+            QHeaderView::section:last {
+                border-right: 1px solid #D3D3D3;
+            }
+            QScrollBar:vertical, QScrollBar:horizontal {
+                background: #F0F0F0;
+                border: 1px solid #D3D3D3;
+                border-radius: 4px;
+            }
+            QScrollBar::handle {
+                background: #B0B0B0;
+                border-radius: 4px;
+            }
+            QScrollBar::handle:hover {
+                background: #909090;
+            }</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="event_page">
+       <layout class="QVBoxLayout" name="verticalLayout_events">
+        <property name="spacing">
+         <number>12</number>
+        </property>
+        <property name="leftMargin">
+         <number>12</number>
+        </property>
+        <property name="topMargin">
+         <number>12</number>
+        </property>
+        <property name="rightMargin">
+         <number>12</number>
+        </property>
+        <property name="bottomMargin">
+         <number>12</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="eventButtonLayout">
+          <property name="spacing">
+           <number>8</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="create_event_button">
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QPushButton {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4A90E2, stop:1 #357ABD);
+                    color: #FFFFFF;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 10px;
+                    font: bold 10pt &quot;Segoe UI&quot;;
+                }
+                QPushButton:hover {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #357ABD, stop:1 #2D5D9F);
+                }
+                QPushButton:pressed {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #2D5D9F, stop:1 #254C80);
+                }
+                QPushButton:disabled {
+                    background-color: #CCCCCC;
+                    color: #666666;
+                }
+             </string>
+            </property>
+            <property name="text">
+             <string>Создать событие</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="edit_event_button">
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QPushButton {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4A90E2, stop:1 #357ABD);
+                    color: #FFFFFF;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 10px;
+                    font: bold 10pt &quot;Segoe UI&quot;;
+                }
+                QPushButton:hover {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #357ABD, stop:1 #2D5D9F);
+                }
+                QPushButton:pressed {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #2D5D9F, stop:1 #254C80);
+                }
+                QPushButton:disabled {
+                    background-color: #CCCCCC;
+                    color: #666666;
+                }
+             </string>
+            </property>
+            <property name="text">
+             <string>Изменить событие</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="delete_event_button">
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+                QPushButton {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E24A4A, stop:1 #BD3535);
+                    color: #FFFFFF;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 10px;
+                    font: bold 10pt &quot;Segoe UI&quot;;
+                }
+                QPushButton:hover {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #BD3535, stop:1 #9F2D2D);
+                }
+                QPushButton:pressed {
+                    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9F2D2D, stop:1 #802525);
+                }
+                QPushButton:disabled {
+                    background-color: #CCCCCC;
+                    color: #666666;
+                }
+             </string>
+            </property>
+            <property name="text">
+             <string>Удалить событие</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_events">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="eventTableView">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+            QTableView {
+                background-color: #FFFFFF;
+                border: 1px solid #D3D3D3;
+                gridline-color: #E0E0E0;
+                font: 9pt &quot;Segoe UI&quot;;
+                color: #333333;
+                border-radius: 6px;
+                padding: 4px;
+            }
+            QTableView::item {
+                padding: 8px;
+                white-space: normal;
+                word-wrap: break-word;
+                text-align: center;
+            }
+            QTableView::item:nth-child(even) {
+                background-color: #F9FAFB;
+            }
+            QTableView::item:nth-child(odd) {
+                background-color: #FFFFFF;
+            }
+            QTableView::item:selected {
+                background-color: #4A90E2;
+                color: #FFFFFF;
+                border: 1px solid #357ABD;
+            }
+            QHeaderView::section {
+                background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E2E8F0, stop:1 #D3DCE5);
+                color: #333333;
+                font: bold 10pt &quot;Segoe UI&quot;;
+                padding: 8px;
+                border: 1px solid #D3D3D3;
+                border-right: none;
+                border-bottom: 2px solid #B0B0B0;
+                text-align: center;
+            }
+            QHeaderView::section:first {
+                border-left: 1px solid #D3D3D3;
+            }
+            QHeaderView::section:last {
+                border-right: 1px solid #D3D3D3;
+            }
+            QScrollBar:vertical, QScrollBar:horizontal {
+                background: #F0F0F0;
+                border: 1px solid #D3D3D3;
+                border-radius: 4px;
+            }
+            QScrollBar::handle {
+                background: #B0B0B0;
+                border-radius: 4px;
+            }
+            QScrollBar::handle:hover {
+                background: #909090;
+            }
+           </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="backups_page">
+       <property name="styleSheet">
+        <string notr="true">
+         QWidget {
+             background-color: #FFFFFF;
+             border: 1px solid #D3D3D3;
+             border-radius: 8px;
+             padding: 8px;
+         }
+        </string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">
+     QStatusBar {
+         background-color: #F0F0F0;
+         color: #333333;
+         font: 9pt &quot;Segoe UI&quot;;
+         border-top: 1px solid #D3D3D3;
+         padding: 4px;
+     }
+    </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
